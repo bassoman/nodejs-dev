@@ -2,6 +2,12 @@
 FROM nodejs:4.0
 MAINTAINER Jon Lancelle <bassoman@gmail.com>
 
-RUN npm install -g nodemon
+RUN npm install -g nodemon bower grunt
 
-EXPOSE 3000 4000
+RUN apt-get install -y python-pip python-virtualenv python-setuptools
+
+RUN easy_install virtualenv
+
+#COPY requirements.txt /
+
+#RUN pip install -r /requirements.txt

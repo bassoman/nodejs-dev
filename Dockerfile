@@ -1,5 +1,4 @@
-# change to bassoman in future...
-FROM nodejs:4.0
+FROM bassoman/nodejs:4.0
 MAINTAINER Jon Lancelle <bassoman@gmail.com>
 
 RUN npm install -g nodemon bower grunt

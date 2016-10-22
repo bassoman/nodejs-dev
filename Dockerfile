@@ -1,4 +1,4 @@
-FROM node
+FROM bassoman/nodejs
 MAINTAINER Jon Lancelle <bassoman@gmail.com>
 
 RUN npm install -g nodemon bower grunt
